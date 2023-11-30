@@ -8,9 +8,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: xldPackage@7
-  inputs:
-    manifestPath: 'pom.xml'
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
@@ -24,6 +21,10 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+
+- task: xldPackage@7
+  inputs:
+    manifestPath: 'deployment-manifest.xml'
 
 - task: PublishPipelineArtifact@1
   inputs:
