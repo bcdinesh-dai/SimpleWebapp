@@ -29,5 +29,5 @@ steps:
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Pipeline.Workspace)'
-    artifact: 'simple-webapp.war'
+    artifact: 'fileapp-4.0.dar'
     publishLocation: 'pipeline'
