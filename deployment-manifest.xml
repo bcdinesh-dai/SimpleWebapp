@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<udm.DeploymentPackage version="4.0" application="fileapp">
+  <application />
+  <orchestrator />
+  <deployables>
+    <tomcat.War name="/sample-war" file="/sample-war/SampleWebApp.war">
+      <tags />
+      <scanPlaceholders>false</scanPlaceholders>
+      <preScannedPlaceholders>false</preScannedPlaceholders>
+      <placeholders />
+      <checksum>e0b8fbd6c51e5ac71e7ab5b250cd96a6f6f81f81e21bca3425d252dc57efddd5</checksum>
+      <fileEncodings>
+        <entry key=".+\.properties">ISO-8859-1</entry>
+      </fileEncodings>
+      <isRescanned>false</isRescanned>
+      <contextRoot>/</contextRoot>
+    </tomcat.War>
+  </deployables>
+  <applicationDependencies />
+  <dependencyResolution>LATEST</dependencyResolution>
+  <undeployDependencies>false</undeployDependencies>
+  <templates />
+  <boundTemplates />
+</udm.DeploymentPackage>
